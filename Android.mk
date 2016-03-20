@@ -25,7 +25,7 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MULTILIB := both
 LOCAL_CERTIFICATE := $(DEFAULT_SYSTEM_DEV_CERTIFICATE)
 
-LOCAL_MODULE_TARGET_ARCH := arm
+LOCAL_MODULE_TARGET_ARCH := arm arm64
 my_src_arch := $(call get-prebuilt-src-arch,$(LOCAL_MODULE_TARGET_ARCH))
 LOCAL_SRC_FILES := prebuilt/$(my_src_arch)/ChromePublic.apk
 
